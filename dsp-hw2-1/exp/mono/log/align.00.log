@@ -1,0 +1,13 @@
+align-equal-compiled ark:exp/mono/train.graph ark,s,cs:feat/train.39.cmvn.ark ark:exp/mono/00.ali 
+WARNING (align-equal-compiled[5.5.0~1-d97f]:Open():util/kaldi-table-inl.h:513) Failed to open stream exp/mono/train.graph
+ERROR (align-equal-compiled[5.5.0~1-d97f]:SequentialTableReader():util/kaldi-table-inl.h:860) Error constructing TableReader: rspecifier is ark:exp/mono/train.graph
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fb4f032750f]
+align-equal-compiled(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x5617892e452b]
+align-equal-compiled(kaldi::SequentialTableReader<fst::VectorFstTplHolder<fst::ArcTpl<fst::TropicalWeightTpl<float> > > >::SequentialTableReader(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x95) [0x5617892e8a7b]
+align-equal-compiled(main+0x14c) [0x5617892e24fc]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fb4e89132e1]
+align-equal-compiled(_start+0x2a) [0x5617892e22aa]
+
+kaldi::KaldiFatalError

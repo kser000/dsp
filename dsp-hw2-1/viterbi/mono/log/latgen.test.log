@@ -1,0 +1,6 @@
+utility/Hybrid.HDecode.mod --trace=1 --beam=50.0 --am-weight=0.40 --lm-weight=1.0 --arpa-lm=material/lm.arpa.txt --mlf=viterbi/mono/test.mlf --htk-mmf=viterbi/mono/final.mmf --htk-tiedlist=viterbi/mono/tiedlist --lex=decode/lexicon.txt --phonelist=train/phones.txt --gmm-weight=1.0 --gmm-mdl=exp/mono/final.mdl --gmm-tree=exp/mono/tree --feature=ark,s,cs:feat/test.39.cmvn.ark 
+Reading dictionary from decode/lexicon.txt
+Reading acoustic models...  ERROR [+5010]  InitSource: Cannot open source file viterbi/mono/tiedlist
+  ERROR [+7010]  InitHMMSet: Can't open list file viterbi/mono/tiedlist
+  ERROR [+4128]  Initialise: MakeHMMSet failed
+ FATAL ERROR - Terminating program utility/Hybrid.HDecode.mod

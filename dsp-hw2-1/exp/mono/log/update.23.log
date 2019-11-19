@@ -1,0 +1,12 @@
+gmm-est --binary=false --min-gaussian-occupancy=3 --mix-up=104 --write-occs=exp/mono/24.occs exp/mono/23.mdl exp/mono/23.acc exp/mono/24.mdl 
+ERROR (gmm-est[5.5.0~1-d97f]:Input():kaldi-io.cc:756) Error opening input stream exp/mono/23.mdl
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7f556e37e50f]
+/opt/kaldi/src/lib/libkaldi-decoder.so(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x7f556fd13f23]
+/opt/kaldi/src/lib/libkaldi-util.so(kaldi::Input::Input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool*)+0x90) [0x7f556e83db9c]
+gmm-est(main+0x74a) [0x55d0595ba57a]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f556696a2e1]
+gmm-est(_start+0x2a) [0x55d0595b9d2a]
+
+kaldi::KaldiFatalError

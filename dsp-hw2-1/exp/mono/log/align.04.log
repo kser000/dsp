@@ -1,0 +1,12 @@
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 exp/mono/04.mdl ark:exp/mono/train.graph ark,s,cs:feat/train.39.cmvn.ark ark:exp/mono/04.ali 
+ERROR (gmm-align-compiled[5.5.0~1-d97f]:Input():kaldi-io.cc:756) Error opening input stream exp/mono/04.mdl
+
+[ Stack-Trace: ]
+/opt/kaldi/src/lib/libkaldi-base.so(kaldi::MessageLogger::LogMessage() const+0xa71) [0x7fb07c93950f]
+gmm-align-compiled(kaldi::MessageLogger::LogAndThrow::operator=(kaldi::MessageLogger const&)+0x11) [0x5618cb13fd67]
+/opt/kaldi/src/lib/libkaldi-util.so(kaldi::Input::Input(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool*)+0x90) [0x7fb07cdf8b9c]
+gmm-align-compiled(main+0x55d) [0x5618cb13d04d]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7fb074f252e1]
+gmm-align-compiled(_start+0x2a) [0x5618cb13c9ea]
+
+kaldi::KaldiFatalError
