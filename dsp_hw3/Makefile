@@ -25,8 +25,7 @@ $(TARGET): $(OBJ) -loolm -ldstruct -lmisc
 all: $(TARGET)
 
 map:
-	@#TODO
-	@#python3 mapping.py $(FROM) $(TO)
+	python3 mapping.py $(FROM) $(TO)
 
 clean:
 	$(RM) $(OBJ) $(TARGET)
